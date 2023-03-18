@@ -18,7 +18,7 @@ public class LinearSearch {
 
 			int arr[] = {10,2,25,67,39,63,99};
 			
-			int key = 343;
+			int key = 39;
 			
 			int position = linear(arr, key);
 			

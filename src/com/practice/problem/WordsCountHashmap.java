@@ -6,7 +6,7 @@ public class WordsCountHashmap {
 
 	public static void main(String[] args) {
 
-		String ss = "Get ready As soon as possible!";
+		String ss = "Get ready as soon as possible!";
 		
 		HashMap<String, Integer> hm = new HashMap<String, Integer>();
 

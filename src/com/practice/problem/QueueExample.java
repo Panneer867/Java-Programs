@@ -11,7 +11,7 @@ public class QueueExample {
 		
 		
 		q.offer(1);
-		q.offer(2);
+		q.offer(8);
 		
 		System.out.println(q.poll());
 		
