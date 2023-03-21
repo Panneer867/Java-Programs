@@ -19,20 +19,26 @@ public class Employee {
 	public int getSalary() {
 		return id;
 	}
-	
-	
-	 @Override
-	    public boolean equals(Object o) {
-	        if (this == o) return true;
-	        if (o == null || getClass() != o.getClass()) return false;
-	        Employee employee = (Employee) o;
-	        return id == employee.id && Objects.equals(name, employee.name);
-	    }
 
-	    @Override
-	    public int hashCode() {
-	        return Objects.hash(id, name);
-	    }
+	@Override
+	public boolean equals(Object obj) {
+
+		if (obj == this) {
+			return true;
+		}
+
+		if (obj == null) {
+			return false;
+		}
+
+		Employee ee = (Employee) obj;
+		return id == ee.id;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
 
 	/*
 	 * public static void main(String[] args) { Employee employee = new
