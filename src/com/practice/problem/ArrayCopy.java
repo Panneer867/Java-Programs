@@ -8,7 +8,7 @@ public class ArrayCopy {
 	    int[] source = {1, 2, 3, 4, 5};
 	    int[] dest = new int[5];
 
-	    System.arraycopy(source, 1, dest, 2, 2);
+	    System.arraycopy(source, 0, dest, 0, 5);
 
 	    System.out.println("Source array: " + Arrays.toString(source));
 	    System.out.println("Destination array: " + Arrays.toString(dest));
